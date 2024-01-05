@@ -2,7 +2,7 @@ const amqp = require('amqplib')
 require("dotenv").config();
 
 const getData = async (client) => {
-    const rabbitmqUrl = `amqp://${process.env.USER}:${process.env.PASSWORD}@${process.env.URL}/`
+    const rabbitmqUrl = `amqp://${process.env.USER}:${process.env.PASSWORD}@${process.env.URL}/keamanan`
 
     try {
         // Membuat koneksi ke RabbitMQ server
